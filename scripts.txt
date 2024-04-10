@@ -1,0 +1,8 @@
+# copy backup file to container
+docker cp TestBaseForAnalyst_20191224.bak d9350e9ffd59:/tmp/TestBaseForAnalyst_20191224.bak
+
+# restore database from file 
+RESTORE DATABASE TestBaseForAnalyst FROM DISK = N'/tmp/TestBaseForAnalyst_20191224.bak'
+WITH MOVE 'TestBaseForAnalyst' TO '/var/opt/mssql/data/TestBaseForAnalyst.mdf'
+, MOVE 'TestBaseForAnalyst_log' TO '/var/opt/mssql/data/TestBaseForAnalyst_log.ldf',
+REPLACE;
