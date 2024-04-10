@@ -4,6 +4,7 @@ Test assignment for Senior Data Engineer position at Social Discovery Group by A
 **Structure:**
 * results/ -- csv files with results of queries
 * sql/ -- sql files with queries
+* compose.yaml -- Docker compose file
 * scripts.txt -- additional scripts for setup
 
 ## Task Description
