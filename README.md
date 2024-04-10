@@ -2,6 +2,7 @@
 Test assignment for Senior Data Engineer position at Social Discovery Group by Artem Grishechko
 
 **Structure:**
+* data/ -- SQL Server db backup
 * results/ -- csv files with results of queries
 * sql/ -- sql files with queries
 * compose.yaml -- Docker compose file
